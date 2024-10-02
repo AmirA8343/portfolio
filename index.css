@@ -150,12 +150,14 @@ nav ul li a.active {
 
 @media (max-width: 480px) {
     nav ul {
-        padding-top: 5px;
+        padding-top: 5px 5px;
        
         display: flex;
         flex-direction: row;
         justify-content: center;
         text-align: center;
+        align-items: center;
+        width: 95%;
     }
 
     nav ul li {
@@ -188,13 +190,36 @@ nav ul li a.active {
         font-size: 13px;
         padding: 6px 12px;
     }
-
+    #projects{
+        margin: 0 auto;
+    }
+  
+/* #projects .project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+} */
    
     #projects .project .services{
-
-    width: 80vh;
-    align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        
 }
+        #projects .project .services .serice .text{
+            width: 87%;
+            margin-bottom: 30px;
+        }
+
+        #projects .project .services .serice img{
+            width: 100%;
+        }
+
 
 #about .about{
     display: flex;
