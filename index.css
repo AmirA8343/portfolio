@@ -149,20 +149,38 @@ nav ul li a.active {
 }
 
 @media (max-width: 480px) {
+    
+   .header {
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+   
+        width: 100%;
+        top: 0;
+        z-index: 1000; /* Ensure the header stays on top */
+        margin-bottom: -70px;
+        
+   }
+
+    
     nav ul {
-        padding-top: 5px 5px;
-       
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
+        
         width: 95%;
+        display: flex;
+        flex-direction: column;
+    
+        
+       
+    }
+   
+    header nav ul li a{
+      display: inline-block;
+      width: 100px;
+      border-radius: 10px;
     }
 
-    nav ul li {
-        margin: 0 5px;
-    }
+    
+    
 
     .text {
         width: 150px;
@@ -183,7 +201,10 @@ nav ul li a.active {
     }
 
     #home{
-        width: 95%;
+        width: 100%;
+        margin: 0 auto;
+        
+       
     }
 
     nav ul li a {
@@ -212,10 +233,20 @@ nav ul li a.active {
         
 }
         #projects .project .services .serice .text{
-            width: 87%;
-            margin-bottom: 30px;
-        }
+            width: 83%;
+           display: absolute;
+            margin-bottom: 25px;
+           
 
+        }
+        #projects .project .services .serice .text h1{
+            font-size: 20px;
+            font-style: italic;
+
+        }
+        #projects .project .services .serice .text p{
+            font-size: 15px;
+        }
         #projects .project .services .serice img{
             width: 100%;
         }
